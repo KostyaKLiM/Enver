@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Start</title>
-  </head>
 
-  <body>
-    <header class="header container">
-      <a href="#" class="header__logo"><img src="/img/logo.png" alt="Logo"></a>
-      <nav class="nav">
-        <ul class="nav__ul" id="navUL">
-          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">Services</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">Our Project</a></li>
-			 <li class="nav__li"><a href="#" class="nav__a">About us</a></li>
-			 <li class="nav__li"><a href="#" class="btn_primary">Contact us</a></li>
-          <span class="material-icons close" onclick="navToggle()">close</span>
-        </ul>
-        <span class="material-icons menu" onclick="navToggle()">menu</span>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Start</title>
+</head>
 
+<body>
+  <header class="header container">
+    <a href="#" class="header__logo"><img src="/img/logo.png" alt="Logo" /></a>
+    <nav class="nav">
+      <ul class="nav__ul" id="navUL">
+        <li class="nav__li"><a href="#" class="nav__a _active">Home</a></li>
+        <li class="nav__li"><a href="#" class="nav__a">Services</a></li>
+        <li class="nav__li"><a href="#" class="nav__a">Our Project</a></li>
+        <li class="nav__li"><a href="#" class="nav__a">About us</a></li>
+        <li class="nav__li">
+          <a href="#" class="btn_primary">Contact us</a>
+        </li>
+        <span class="material-icons close" onclick="navToggle()">close</span>
+      </ul>
+      <span class="material-icons menu" onclick="navToggle()">menu</span>
+    </nav>
+  </header>
+
+  <div class="main-screen container">
+    <div class="main-screen__info">
+      <div class="main-screen__title">Build Your Awesome Platform</div>
+      <div class="main-screen__desc">
+        Enver studio is a digital studio that offers several services such as
+        UI/UX Design to developers, we will provide the best service for those
+        of you who use our services.
+      </div>
+      <div class="main-screen__btn">
+        <a href="#" class="btn _secondary">
+          <span>Our Services</span>
+          <img src="img/arrow.svg" alt="Arrow-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="main-screen__img">
+      <img src="img/user.png" alt="User Photo" />
+    </div>
+  </div>
+
+  <div class="why container">
+    <div class="why-info">
+      <div class="why-title">Why Enver Is The Best Choice?</div>
+      <div class="why-desc">
+        Watch this one minute video so you understand why you should use our
+        services!
+      </div>
+    </div>
+    <a href="#" class="why-img">
+      <img src="img/video.png" alt="Video" />
+    </a>
+  </div>
+
+  <div class="service container">
+    <div class="service-title">The Service We Provide For You</div>
+    <div class="service-list">
+      <div class="service-item">
+        <div class="service-item__icon">
+          <img src="img/code.svg" alt="Code">
+        </div>
+        <div class="service-item__title">Development</div>
+        <div class="service-item__desc">Create a platform with the best and coolest quality from us.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-item__icon">
+          <img src="img/code.svg" alt="Code">
+        </div>
+        <div class="service-item__title">Development</div>
+        <div class="service-item__desc">Create a platform with the best and coolest quality from us.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-item__icon">
+          <img src="img/code.svg" alt="Code">
+        </div>
+        <div class="service-item__title">Development</div>
+        <div class="service-item__desc">Create a platform with the best and coolest quality from us.</div>
+      </div>
+    </div>
     <!-- SCRIPT -->
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -19,13 +19,30 @@ body {
   outline: 0;
   cursor: pointer;
   &_primary {
-    @include text($ff, 600, 20px, 23px, $terciary);
+    @include text($ff, 400, 16px, 22px, $white);
+letter-spacing: -0.500211px;
+padding: 12px 42px;
+border: 1px solid #ffffff;
+background: transparent;
+border-radius: 5px;
+transition: $transition;
+&:hover{
+  background: $white;
+  color: #19191B;
+}
   }
-  &_secondary {
-    background: $primary;
-    border-radius: 22px;
-    padding: 10px 25px;
-    @include text($ff, 600, 20px, 23px, $white);
+  &._secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: $transition;
+    background: #5454D4;
+    border-radius: 4px;
+    padding: 16px 27px;
+    @include text($ff, 20px, 27px, 700, $white);
+    &:hover{
+      background: darken(#5454D4, 10%);
+    }
   }
 }
 

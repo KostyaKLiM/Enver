@@ -2,17 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid $grey;
+  padding: 40px 20px;
+  padding-bottom: 23px;
   &__logo {
     @include text($ff, 400, 16px, 19px, $darkpurple);
   }
 }
 .nav {
+  z-index: 10;
+  flex-grow: 1;
+   @include tablet{
+    flex-grow: 0;
+   }
   &__ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     @include tablet {
       position: fixed;
       width: 100%;
@@ -39,7 +44,7 @@
       }
       .close {
         position: absolute;
-        top: 20px;
+        top: 45px;
         right: 20px;
       }
     }
@@ -51,7 +56,22 @@
       display: inline-block;
     }
   }
+  &__li{
+    &:first-child, &:last-of-type{
+      margin-left: auto;
+      @include tablet{
+        margin-left: initial;
+      }
+    }
+  }
   &__a {
-    @include text($ff, 400, 16px, 19px, rgba(255, 255, 255, 0.7));
+    @include text($ff, 18px, 25px, 400, rgba(255, 255, 255, 0.7));
+    transition: $transition;
+    &:hover{
+      color: $white;
+    }
+    &._active{
+      color:#5454D4;
+    }
   }
 }
