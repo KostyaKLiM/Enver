@@ -1,5 +1,5 @@
-$ff:'Nunito Sans', sans-serif;
-$ff-second:'Graphik', sans-serif;
+$ff: "Nunito Sans", sans-serif;
+$ff-second: "Graphik", sans-serif;
 
 $paragraph: #262626;
 $terciary: #f9f1fe;
@@ -12,6 +12,8 @@ $grey: #d9d9d9;
 $darkgrey: #6c6c6c;
 $darkpurple: #1c1b1f;
 
+$dotsBg:#121213;
+
 $transition: 0.3s all ease-in-out;
 
 //breakpoint
@@ -20,4 +22,4 @@ $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
 
-$container: 1240px;
+$container: 1240rem;
